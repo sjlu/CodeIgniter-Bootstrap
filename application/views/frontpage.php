@@ -1,11 +1,7 @@
 <div class="container">
-   <div class="hero-unit">
-      <h2>CodeIgniter Bootstrap</h2>
-      <p>This includes a stater template that is built around <a href="http://codeigniter.com">CodeIgniter</a> and <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>. This allows you to skip the starting phase of development (like creating login boxes and menu bars) and puts you straight to the focus: where your idea is.</p>
-      <p>For more information, visit the documentation for these great tools.</p>
-      <ul>
-         <li><a href="http://codeigniter.com/user_guide/">CodeIgniter Documentation</a></li>
-         <li><a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a></li>
-      <ul>
+   <div class="well">
+      <h3>Welcome to the Virtual Biology Lab</h3>
+      <p>The Virtual Biology Lab is intended to inform and teach students certain aspects of Biology in a virtual environment. Each and every lab also entails a quiz at the end, testing students to see if they have grasped the pertinent information. Labs include Cell Division, Biological Molecules, Enzyme State Diagram, and Meiosis Activity.</p>
+      <p>You must currently be enrolled in a biology course at Rutgers University for the semester to <a href="<?= site_url('account/create') ?>">create an account</a>. If you already have an account, you may <a href="<?= site_url('account/login') ?>">login</a>.</p>
    </div>
 </div>

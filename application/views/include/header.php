@@ -11,15 +11,23 @@
    <title></title>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
 
-   <link href="assets/css/bootstrap.css" rel="stylesheet">
-   <style>
-      body {
-         padding-top: 40px;
-      }
-   </style>
+   <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
+   <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
+   <link href="<?= base_url('assets/css/custom.css') ?>" rel="stylesheet">
 </head>
 
 <body>
+<div id="header" class="container">
+   <div class="row-fluid">
+      <div id="logo" class="span4">
+         <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" />
+      </div>
+      <div id="title" class="span8"><h2>Virtual Biology Lab</h2></div>
+   </div>
+</div>
+
+<p></p>
+
 <div class="container">
