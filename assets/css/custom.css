@@ -1,0 +1,29 @@
+body {
+   padding-top: 15px;
+}
+
+#logo {
+   text-align: center;
+}
+
+@media (max-width: 768px) {
+   #logo {
+      text-align: center;
+   }
+
+   #title {
+      padding-top: 5px;
+      text-align: center;
+   }
+}
+
+@media (min-width: 768px) {
+   #logo {
+      text-align: left;
+   }
+
+   #title {
+      margin-top: 45px;
+      text-align: right;
+   }
+}
