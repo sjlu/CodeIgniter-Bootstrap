@@ -48,3 +48,57 @@ function is_active($input_params = "")
 
    return true;
 }
+
+/*
+ * get_controller()
+ * get_function()
+ * get_parameters()
+ *
+ * These functions help split out
+ * the three different params in the
+ * URL.
+ * 
+ * The URL is split in such a way where
+ * controller/function/parameters[/]...
+ */
+function get_controller()
+{
+   $uri_string = uri_string();
+   
+   if (empty($uri_string))
+      return $route['default_controller'];
+
+   return preg_split("/\//", $uri_string, 1);
+}
+
+function get_function()
+{
+   $uri_string = uri_string();
+   
+   if (empty($uri_string))
+      return $route['default_controller'];
+  
+   $uri_array = preg_split("/\//", $uri_string, 2);
+
+   if (empty($uri_array[1]))
+      return 'index';
+
+   return $uri_array[1];
+}
+
+function get_parameters()
+{
+   $uri_string = uri_string();
+
+   if (empty($uri_string))
+      return null;
+
+   $uri_array = preg_split("/\//", $uri_string);
+
+   if (empty($uri_string[2]))
+      return null;
+   
+   $uri_array = array_slice($uri_array, 2);
+
+   return implode("/", $uri_array);
+}
