@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'https://styx.stevenlu.com/~sjlu/vbl/web/';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
