@@ -4,7 +4,9 @@ class Frontpage extends CI_Controller {
 
    public function index()
 	{
+      $this->load->view('include/header');
       $this->load->view('frontpage');
+      $this->load->view('include/footer');
 	}
 
 }
