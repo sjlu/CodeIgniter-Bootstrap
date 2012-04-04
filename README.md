@@ -6,6 +6,10 @@ CodeIgniter Bootstrap kick starts the development process of the web development
 
 You will need a proper web server that can run PHP 5.0 or higher. I will also suggest using a MySQL database, though you also encouraged to use other libraries that support a better database like MongoDB.
 
+###Built Around Heroku
+
+Everyone likes free hosting, especially one that easily scales. By design, a LAMP stack has a much higher scalability and availability than most technologies. There are some things that have been added to detect Heroku environments.
+
 ##Included Libraries
 
 You can load the several libraries included in CodeIgniter-Bootstrap. These libraries can be worked on an extended on through the directory `application/libraries`. You will also need to edit the configuration files for these SDKs, located at `application/config`.
