@@ -52,6 +52,19 @@ http://codeigniter.com/user_guide/helpers/url_helper.html
 
 is_active will return true or false based on if the inputted URI is contained in the current URI. The inputted URI does not need to be full. For example `/api/func/` will match `/api/func/1`. This function is useful when needing to call `class="active"` on elements of HTML.
 
+####get_controller(), get_function(), get_parameters()
+
+These functions will split up the URI and output them in a readable format for you. For exmaple, CI URLs are typically made in a way such as `/controller/function/param1/param2/`. These functions will split these up for you so that for example, all you want is the current paramenters, you would not need to parse the entire URL by yourself.
+
+###Directory Helper
+
+The Directory Helper extends the current CodeIgniter Directory helper, this is auto-loaded.
+http://codeigniter.com/user_guide/helpers/directory_helper.html
+
+####dir2list($dir)
+
+dir2list gives your a directory as a list element, auto-languaging files into a nice title including the directory name. For example, if you create a directory named `some_directory`, it will be renamed to `Some Directory` for you to use. This function is not recursive. This is formatted as `array(title => "Some Directory", dir => "some_directory")`.
+
 ##Styling your CSS and HTML
 
 By convention, you want to write your HTML documents in the views. They are located at `application/views`. In order to load those views, your controller has to then include the view (including the header and footer view).
