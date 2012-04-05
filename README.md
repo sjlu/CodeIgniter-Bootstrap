@@ -41,6 +41,17 @@ https://github.com/facebook/php-sdk
 View the MongoDB library for CodeIgniter here:
 https://github.com/alexbilbie/codeigniter-mongodb-library/tree/v2
 
+##Extended Helper Functions
+
+###URL Helper
+
+The URL Helper extends the current CodeIgniter URL helper. This helper is also auto-loaded.
+http://codeigniter.com/user_guide/helpers/url_helper.html
+
+####is_active($uri)
+
+is_active will return true or false based on if the inputted URI is contained in the current URI. The inputted URI does not need to be full. For example `/api/func/` will match `/api/func/1`. This function is useful when needing to call `class="active"` on elements of HTML.
+
 ##Styling your CSS and HTML
 
 By convention, you want to write your HTML documents in the views. They are located at `application/views`. In order to load those views, your controller has to then include the view (including the header and footer view).
