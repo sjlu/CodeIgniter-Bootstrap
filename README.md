@@ -41,6 +41,17 @@ https://github.com/facebook/php-sdk
 View the MongoDB library for CodeIgniter here:
 https://github.com/alexbilbie/codeigniter-mongodb-library/tree/v2
 
+###CodeIgniter REST Library
+
+When writing a REST API, you will need to write a different type of controller. Typically you create your controller and extend the `CI_Controller`, you should instead extend the `REST_Controller`.
+
+    class Api extends REST_Controller
+    {
+        function user_post()
+
+        function user_get()
+    }
+
 ##Extended Helper Functions
 
 ###URL Helper
