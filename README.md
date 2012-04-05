@@ -48,9 +48,11 @@ When writing a REST API, you will need to write a different type of controller. 
     class Api extends REST_Controller
     {
         function user_post()
-
         function user_get()
     }
+    
+You should note the `post` and `get` at the end of the functions, denoting the type of request. For more information, you should consult the CodeIgniter-RestServer repository here:
+https://github.com/philsturgeon/codeigniter-restserver/
 
 ##Extended Helper Functions
 
