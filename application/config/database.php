@@ -64,6 +64,14 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+if (empty($db['default']['hostname']) && isset($_SERVER['CLEARDB_DATABASE_URL']))
+{
+   $cleardb = preg_split('/[\/:@]+/', $_SERVER['CLEARDB_DATABASE_URL']);
+   $db['default']['hostname'] = $cleardb[3];
+   $db['default']['username'] = $cleardb[1];
+   $db['default']['password'] = $cleardb[2];
+   $db['default']['database'] = $cleardb[4];
+}
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
