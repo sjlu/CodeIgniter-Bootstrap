@@ -12,6 +12,12 @@ You will need a proper web server that can run PHP 5.0 or higher. I will also su
 
 Everyone likes free hosting, especially one that easily scales. By design, a LAMP stack has a much higher scalability and availability than most technologies. There are some things that have been added to detect Heroku environments.
 
+####Sendgrid
+
+Heroku has a Sendgrid addon. By default, there is no sendmail on Heroku LAMP stacks so you'll need to use a cloud email service. Heroku is a cloud service by design, it makes sense to use another cloud service to host email delivery.
+
+To add the Sendgrid service, simply run `heroku addons:add sendgrid:starter` and CodeIgniter Bootstrap will automatically take its configuration and use it for any calls you use with the Email Class that CodeIgniter provides.
+
 ##Included Libraries
 
 You can load the several libraries included in CodeIgniter-Bootstrap. These libraries can be worked on an extended on through the directory `application/libraries`. You will also need to edit the configuration files for these SDKs, located at `application/config`.
