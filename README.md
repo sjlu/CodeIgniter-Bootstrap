@@ -14,9 +14,15 @@ Everyone likes free hosting, especially one that easily scales. By design, a LAM
 
 ####Sendgrid
 
-Heroku has a Sendgrid addon. By default, there is no sendmail on Heroku LAMP stacks so you'll need to use a cloud email service. Heroku is a cloud service by design, it makes sense to use another cloud service to host email delivery.
+Heroku has a Sendgrid addon. By default, there is no sendmail on Heroku LAMP stacks so you will need to use a cloud email service. Heroku is a cloud service by design, it makes sense to use another cloud service to host email delivery.
 
 To add the Sendgrid service, simply run `heroku addons:add sendgrid:starter` and CodeIgniter Bootstrap will automatically take its configuration and use it for any calls you use with the Email Class that CodeIgniter provides.
+
+####ClearDB
+
+Heroku also has a MySQL addon. We will auto-input this into the configuration if we detect it.
+
+To add a ClearDB MySQL service, simply run `heroku addons:add cleardb:ignite`.
 
 ##Included Libraries
 
