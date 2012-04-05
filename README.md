@@ -8,6 +8,12 @@ CodeIgniter Bootstrap follows the path where it lazy loads libraries. Though the
 
 You will need a proper web server that can run PHP 5.0 or higher. I will also suggest using a MySQL database, though you also encouraged to use other libraries that support a better database like MongoDB.
 
+###Recommendations
+
+* You should consider using the Migration Class that CodeIgniter includes. This will allow you to easy migrate your database to different environments.
+
+* Remember to change the environment variable located in the `index.php` file. Changing the environment type will change the behavior or your application from a rapid-agile development environment to a fast-cached production environment.
+
 ###Built Around Heroku
 
 Everyone likes free hosting, especially one that easily scales. By design, a LAMP stack has a much higher scalability and availability than most technologies. There are some things that have been added to detect Heroku environments.
