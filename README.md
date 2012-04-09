@@ -74,6 +74,10 @@ https://github.com/philsturgeon/codeigniter-restserver/
 
 ##Extended Helper Functions
 
+###Unit Testing
+
+We made Unit Testing easy and pretty. The only thing you need to do is write your unit tests. To do so, go to `application/models/unit_model.php` and create the unit tests in the appropriate places. When you're done, all you need to do is call `index.php/unit` from your browser to generate a unit test report.
+
 ###URL Helper
 
 The URL Helper extends the current CodeIgniter URL helper. This helper is also auto-loaded.
