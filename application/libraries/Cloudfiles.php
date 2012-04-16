@@ -7,19 +7,22 @@ class Cloudfiles {
 
    private $auth;
    private $conn;
+   private $cont;
+   private $cont_name;
 
    public function __construct() 
    {
       include_once 'rs/cloudfiles.php';
 
       $ci =& get_instance();
+      $ci->config->load('cloudfiles');
       $this->user = $ci->config->item('cf_user');
       $this->api_key = $ci->config->item('cf_api_key');
 
       $this->auth = new CF_Authentication($this->user, $this->api_key);  
       $this->auth->authenticate();
 
-      $this->conn = new CF_Connection($this->conn);
+      $this->conn = new CF_Connection($this->auth);
    }
 
    public function create_container($cname)
@@ -61,9 +64,18 @@ class Cloudfiles {
 
    private function get_container($c)
    {
+      if (isset($this->cont) && $this->cont_name == $c)
+         return $this->cont; 
+
       try
       {
-         $container = $this->conn->getContainer($c);
+         $container = $this->conn->get_container($c);
+
+         // caching the current container
+         // so that we don't need to access
+         // it a million times.
+         $this->cont = $container;
+         $this->cont_name = $c;
       }
       catch (Exception $excp)
       {
@@ -111,7 +123,7 @@ class Cloudfiles {
 
    private function get_object($c, $f)
    {
-      if (!$container = $this->conn->getContainer($c))
+      if (!$container = $this->get_container($c))
          return false;
 
       if (!$obj = $container->get_object($f))
@@ -146,7 +158,7 @@ class Cloudfiles {
 
    public function delete_object($c, $f)
    {
-      if (!$container = $this->conn->getContainer($c))
+      if (!$container = $this->get_container($c))
          return false;
 
       try
@@ -184,6 +196,25 @@ class Cloudfiles {
          return false;
 
       echo $url;
+   }
+
+   public function list_objects($c)
+   {
+      if (!$container = $this->get_container($c))
+         return false;
+
+      try
+      {
+         $list = $container->list_objects();
+      }
+      catch (Exception $excp)
+      {
+         $excp = $excp->getMessage();
+         // docs saay only excp is InvalidResponseException
+         return false;
+      }
+
+      return $list;
    }
 
 }
