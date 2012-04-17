@@ -8,6 +8,7 @@ class Aws {
    public function __construct()
    {
       $ci =& get_instance();
+      $ci->config->load('aws');
       $this->aws_key = $ci->config->item('aws_key');
       $this->aws_secret = $ci->config->item('aws_secret');
    }

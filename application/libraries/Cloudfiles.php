@@ -20,9 +20,11 @@ class Cloudfiles {
       $this->api_key = $ci->config->item('cf_api_key');
 
       $this->auth = new CF_Authentication($this->user, $this->api_key);  
+      $this->auth->ssl_use_cabundle();
       $this->auth->authenticate();
 
       $this->conn = new CF_Connection($this->auth);
+      $this->conn->ssl_use_cabundle();
    }
 
    public function create_container($cname)

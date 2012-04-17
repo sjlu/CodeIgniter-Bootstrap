@@ -8,6 +8,7 @@ class Aws {
    public function __construct()
    {
       $ci =& get_instance();
+      $ci->config->load('fb');
       $this->appid = $ci->config->item('fb_appid');
       $this->secret = $ci->config->item('fb_secret');
 
