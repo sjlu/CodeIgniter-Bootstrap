@@ -72,6 +72,14 @@ When writing a REST API, you will need to write a different type of controller. 
 You should note the `post` and `get` at the end of the functions, denoting the type of request. For more information, you should consult the CodeIgniter-RestServer repository here:
 https://github.com/philsturgeon/codeigniter-restserver/
 
+###Rackspace Cloudfiles API
+
+    $this->load->library('cloudfiles');
+    $this->cloudfiles->create_container('containername');
+    $this->cloudfiles->create_object('containername', '/path/to/file');
+
+You should checkout `application/libraries/cloudfiles.php` for a list of available functions. You will also need to edit `config/cloudfiles.php` in order to properly use the Cloudfiles library module.
+
 ##Extended Helper Functions
 
 ###Unit Testing
