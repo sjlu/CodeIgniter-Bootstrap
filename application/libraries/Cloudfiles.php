@@ -190,14 +190,14 @@ class Cloudfiles {
          return false;
 
       if ($ssl)
-         $url = $obj->public_ssi_uri();
+         $url = $obj->public_ssl_uri();
       else
          $url = $obj->public_uri();
 
       if (!$url)
          return false;
 
-      echo $url;
+      return $url;
    }
 
    public function list_objects($c)

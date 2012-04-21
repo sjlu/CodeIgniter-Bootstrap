@@ -86,7 +86,16 @@ function get_function()
    return $uri_array[1];
 }
 
-function get_parameters()
+function get_parameter($n = -1)
+{
+   $param = get_parameters(false);
+   if ($n < 0) return $param;
+
+   if (empty($param[$n])) return 'null';
+   return $param[$n];
+}
+
+function get_parameters($implode = true)
 {
    $uri_string = uri_string();
 
@@ -99,6 +108,9 @@ function get_parameters()
       return null;
    
    $uri_array = array_slice($uri_array, 2);
+   
+   if (!$implode)
+      return $uri_array;
 
    return implode("/", $uri_array);
 }
