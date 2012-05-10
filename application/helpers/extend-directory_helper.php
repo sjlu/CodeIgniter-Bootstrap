@@ -20,7 +20,7 @@ function dir2list($dir)
    {
       $temp = array();
 
-      $temp['dir'] = $dir_name;
+      $temp['path'] = $dir_name;
 
       $dir_name = str_replace(array('_'), " ", $dir_name);
       $dir_name = ucwords($dir_name);
