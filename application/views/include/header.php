@@ -27,7 +27,4 @@
       <div id="title" class="span8"><h2>CodeIgniter Bootstrap</h2></div>
    </div>
 </div>
-
 <p></p>
-
-<div class="container">
