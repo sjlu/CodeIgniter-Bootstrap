@@ -24,7 +24,7 @@ class Unit extends CI_Controller
       $data['failed'] = $this->unit_model->count_failed_tests($data['tests']);
 
       $this->load->view('include/header');
-      $this->load->view('unit', $data);
+      $this->load->view('templates/unit', $data);
       $this->load->view('include/footer');
    }
 
