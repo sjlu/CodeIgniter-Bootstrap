@@ -1,5 +1,11 @@
 <?php
-
+/*
+ * Unit_model
+ * An easier way to construct your unit testing
+ * and pass it to a really nice looking page.
+ *
+ * @author sjlu
+ */
 class Unit_model extends CI_Model {
 
    public function __construct()
@@ -17,6 +23,11 @@ class Unit_model extends CI_Model {
       return $count;
    }
 
+   /*
+    * Write your tests here, it is done this way
+    * because you may need to dynamically generate
+    * your data from other models, etc.
+    */
    public function retrieve_tests()
    {
       $tests = array();
