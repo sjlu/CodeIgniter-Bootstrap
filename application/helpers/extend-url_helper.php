@@ -91,7 +91,7 @@ function get_parameter($n = -1)
    $param = get_parameters(false);
    if ($n < 0) return $param;
 
-   if (empty($param[$n])) return 'null';
+   if (empty($param[$n])) return null;
    return $param[$n];
 }
 
