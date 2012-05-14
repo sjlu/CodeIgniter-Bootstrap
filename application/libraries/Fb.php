@@ -1,6 +1,6 @@
 <?php
 
-class Aws {
+class Fb {
    
    private $appid = '';
    private $secret = '';
