@@ -6,7 +6,7 @@ CodeIgniter Bootstrap follows the path where it lazy loads libraries. Though the
 
 ## Documentation
 
-### Check out the [Wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
+Check out the [Wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
 
 ## License
 
