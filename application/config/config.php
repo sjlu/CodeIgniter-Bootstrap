@@ -18,6 +18,22 @@ $config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
+| Content Delivery Network URL
+|--------------------------------------------------------------------------
+|
+| Loading content like .js, .png, .css files on a CDN is much better. 
+| This allows you to support CDNs.
+|
+|	http://example.com/
+|
+| Use the normal base_url() function and upload your /assets and /content
+| to the CDN. 
+|
+*/
+$config['cdn_url']	= '';
+
+/*
+|--------------------------------------------------------------------------
 | Index File
 |--------------------------------------------------------------------------
 |
@@ -106,7 +122,7 @@ $config['enable_hooks'] = FALSE;
 | http://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'extend-';
+$config['subclass_prefix'] = 'extend.';
 
 
 /*

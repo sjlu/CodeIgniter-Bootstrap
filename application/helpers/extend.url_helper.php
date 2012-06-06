@@ -5,6 +5,24 @@
  * CodeIgniter includes.
 */
 
+/**
+ * base_url
+ *
+ * This function OVERRIDES the current
+ * CodeIgniter base_url function to support
+ * CDN'ized content.
+ */
+function base_url($uri)
+{
+   $CI =& get_instance();
+
+   $cdn = $CI->config->item('cdn_url');
+   if (!empty($cdn))
+      return $cdn . $uri;
+
+   return $CI->config->base_url($uri);
+}
+
 /*
  * is_active
  * Allows a string input that is
