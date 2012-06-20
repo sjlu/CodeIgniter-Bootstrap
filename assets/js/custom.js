@@ -9,8 +9,7 @@
  *
  * @author  sjlu (Steven Lu)
  */
-
-function Frontpage()
+var Frontpage = function()
 {
 	/**
 	 * The exports variable is responsible for
@@ -67,7 +66,7 @@ function Frontpage()
  * to define it into a Javascript variable like
  * so.
  */
-var frontpage = Frontpage();
+var frontpage = new Frontpage();
 
 /**
  * We can then call the functions as like any
