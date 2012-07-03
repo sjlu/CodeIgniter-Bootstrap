@@ -12,6 +12,10 @@ Derived from CodeIgniter, read [CodeIgniter Installation](http://codeigniter.com
 
 Check out the [Wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
 
+## Releases
+
+This is currently a very active project, there are no projected release locks planned. All changes will be latest in master and may be unstable.
+
 ## License
 
 MIT with [CodeIgniter Amendments](http://codeigniter.com/user_guide/license.html)
