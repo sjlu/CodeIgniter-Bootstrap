@@ -1,2 +1,4 @@
 .DS_Store
 .swp
+application/cache
+application/logs
