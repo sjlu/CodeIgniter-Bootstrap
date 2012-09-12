@@ -1,6 +1,5 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Frontpage extends CI_Controller {
+<?php if (!defined('BASEPATH')) die();
+class Frontpage extends Main_Controller {
 
    public function index()
 	{
@@ -8,7 +7,7 @@ class Frontpage extends CI_Controller {
       $this->load->view('frontpage');
       $this->load->view('include/footer');
 	}
-
+   
 }
 
 /* End of file frontpage.php */
