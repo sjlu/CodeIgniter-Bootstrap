@@ -7,22 +7,22 @@
       </tr>
    </thead>
 
-   <? foreach ($tests as $test): ?>
+   <?php foreach ($tests as $test): ?>
       <tr>
-         <td><?= $test['Test Name']; ?></td>
-         <td><?= $test['Notes']; ?></td>
-         <td><span class="label <? if ($test['Result'] == 'Passed'): ?>label-success<? else: ?>label-important<? endif; ?>"><?= $test['Result']; ?></span></td>
+         <td><?php $test['Test Name']; ?></td>
+         <td><?php $test['Notes']; ?></td>
+         <td><span class="label <?php if ($test['Result'] == 'Passed'): ?>label-success<?php else: ?>label-important<?php endif; ?>"><?php $test['Result']; ?></span></td>
       </tr>
-   <? endforeach; ?>
+   <?php endforeach; ?>
 </table>
 
 <div class="row">
-   <? if ($failed > 0): ?>
+   <?php if ($failed > 0): ?>
       <div class="offset3 span5 alert alert-error" style="text-align: center;">
-         <b>Not Good!</b> <?= $failed ?> of <?= $count ?> tests failed! 
-   <? else: ?>
+         <b>Not Good!</b> <?php $failed ?> of <?php $count ?> tests failed! 
+   <?php else: ?>
       <div class="offset3 span5 alert alert-success" style="text-align: center;">
-         <b>Success!</b> Of the <?= $count ?> tests ran, all of them passed!
-   <? endif; ?>
+         <b>Success!</b> Of the <?php $count ?> tests ran, all of them passed!
+   <?php endif; ?>
    </div>
 </div>
