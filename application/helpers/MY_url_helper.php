@@ -12,7 +12,7 @@
  * CodeIgniter base_url function to support
  * CDN'ized content.
  */
-function base_url($uri)
+function base_url($uri = null)
 {
    $CI =& get_instance();
 
