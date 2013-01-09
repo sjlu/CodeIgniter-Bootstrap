@@ -28,11 +28,6 @@ $config['next_link'] = false;
 $config['prev_link'] = false;
 
 /*
- * Do not edit, bypass CI bug.
- */
-$config['uri_segment'] = $this->uri->total_segments();
-
-/*
  * The "First" and "Last" segments.
  */
 $config['first_tag_open'] = $config['num_tag_open'];
