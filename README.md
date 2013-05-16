@@ -8,6 +8,11 @@ CodeIgniter Bootstrap follows the path where it lazy loads libraries. Though the
 
 Derived from CodeIgniter, read [CodeIgniter Installation](http://codeigniter.com/user_guide/installation/index.html) for how to install using this [zipball](https://github.com/sjlu/CodeIgniter-Bootstrap/zipball/master) instead. If you're not familiar with CodeIgniter, I suggest reading the [CodeIgniter Tutorial](http://codeigniter.com/user_guide/tutorial/index.html) on how to get started and read the [wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
 
+## Flavors
+
+* The `master` branch contains the original and includes [Twitter Bootstrap](http://twitter.github.io/bootstrap/) and [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+* The `cdn` branch contains the same libraries but is hosted by [BootstrapCDN](http://www.bootstrapcdn.com/).
+
 ## Documentation
 
 Check out the [Wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
