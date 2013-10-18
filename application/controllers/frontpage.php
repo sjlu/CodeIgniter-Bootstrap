@@ -3,9 +3,15 @@ class Frontpage extends Main_Controller {
 
    public function index()
 	{
+
+	  $data['js'] = array(
+	  						'bootstrap-min' => 'assets/js/bootstrap.min.js',
+	  						'custom' => 'assets/js/custom.js'
+	  					);
+
       $this->load->view('include/header');
       $this->load->view('frontpage');
-      $this->load->view('include/footer');
+      $this->load->view('include/footer', $data);
 	}
    
 }
