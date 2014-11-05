@@ -18,6 +18,41 @@ $config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
+| Content Delivery Network URL
+|--------------------------------------------------------------------------
+|
+| Loading content like .js, .png, .css files on a CDN is much better. 
+| This allows you to support CDNs.
+|
+|	http://example.com/
+|
+| Use the normal base_url() function and upload your /assets and /content
+| to the CDN. 
+|
+*/
+$config['cdn_url']	= '';
+/*
+
+/*
+| -------------------------------------------------------------------
+|  Native Auto-load
+| -------------------------------------------------------------------
+| 
+| Nothing to do with config/autoload.php, this allows PHP autoload to work
+| for base controllers and some third-party libraries.
+|
+*/
+function __autoload($class)
+{
+	if(strpos($class, 'CI_') !== 0)
+ 	{
+  		@include_once( APPPATH . 'core/'. $class . EXT );
+ 	}
+}
+/*
+
+/*
+|--------------------------------------------------------------------------
 | Index File
 |--------------------------------------------------------------------------
 |
