@@ -31,6 +31,7 @@ $config['base_url']	= '';
 |
 */
 $config['cdn_url']	= '';
+/*
 
 /*
 |--------------------------------------------------------------------------
@@ -373,6 +374,7 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+
 /*
 | -------------------------------------------------------------------
 |  Native Auto-load
@@ -389,6 +391,8 @@ function __autoload($class)
   		@include_once( APPPATH . 'core/'. $class . EXT );
  	}
 }
+/*
+
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
