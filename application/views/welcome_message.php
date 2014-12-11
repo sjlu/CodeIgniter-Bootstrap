@@ -10,7 +10,7 @@
 		<p>The corresponding controller for this page is found at:</p>
 		<code>application/controllers/welcome.php</code>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="http://www.codeigniter.com/user_guide/">User Guide</a>.</p>
 	</div>
 
 	<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
