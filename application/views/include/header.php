@@ -10,5 +10,6 @@
 
     <link href="<?php echo base_url('assets/plugins/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/plugins/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/main.css') ?>" rel="stylesheet">
 </head>
 <body>
