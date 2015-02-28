@@ -3,9 +3,15 @@ class Frontpage extends Main_Controller {
 
    public function index()
 	{
-      $this->load->view('include/header');
-      $this->load->view('frontpage');
-      $this->load->view('include/footer');
+      // $this->load->view('include/header');
+      // $this->load->view('frontpage');
+      // $this->load->view('include/footer');
+	  	$data = array(
+		 
+		    'title' => 'Agent Login',
+		     
+		);
+      $this->template->load('default', 'login', $data);
 	}
    
 }

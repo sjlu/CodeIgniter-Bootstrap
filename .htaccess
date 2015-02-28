@@ -1,0 +1,51 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /
+
+    ### Canonicalize codeigniter URLs
+
+    # If your default controller is something other than
+    # "welcome" you should probably change this
+    RewriteRule ^(session(/index)?|index(\.php)?)/?$ / [L,R=301]
+    RewriteRule ^(session(/forgotPassword)?|index(\.php)?)/?$ /forgotPassword [L,R=301]
+    RewriteRule ^(.*)/index/?$ $1 [L,R=301]
+
+    # Removes trailing slashes (prevents SEO duplicate content issues)
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteRule ^(.+)/$ $1 [L,R=301]
+
+    # Enforce www
+    # If you have subdomains, you can add them to
+    # the list using the "|" (OR) regex operator
+    #RewriteCond %{HTTP_HOST} !^(www|subdomain) [NC]
+    #RewriteRule ^(.*)$ http://www.domain.tld/$1 [L,R=301]
+
+    # Enforce NO www
+    RewriteCond %{HTTP_HOST} ^www [NC]
+    RewriteRule ^(.*)$ http://api.einstein.johnpaulmedina.com/$1 [L,R=301]
+
+    ###
+
+    # Removes access to the system folder by users.
+    # Additionally this will allow you to create a System.php controller,
+    # previously this would not have been possible.
+    # 'system' can be replaced if you have renamed your system folder.
+    RewriteCond %{REQUEST_URI} ^system.*
+    RewriteRule ^(.*)$ /index.php/$1 [L]
+
+    # Checks to see if the user is attempting to access a valid file,
+    # such as an image or css document, if this isn't true it sends the
+    # request to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+
+    # Without mod_rewrite, route 404's to the front controller
+    ErrorDocument 404 /index.php
+
+</IfModule>
