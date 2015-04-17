@@ -1,4 +1,5 @@
 .DS_Store
 .swp
-application/cache
-application/logs
+.tmp
+CodeIgniter-Bootstrap
+CodeIgniter-Bootstrap.zip
