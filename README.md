@@ -10,7 +10,7 @@ Bundles the following packages together.
 
 ## Use
 
-* Download this [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/master/CodeIgniter-Bootstrap.zip)
+* Download this [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/1.0.0/CodeIgniter-Bootstrap.zip)
 * Use like any other [CodeIgniter install](http://codeigniter.com/user_guide/installation/index.html)
 
 ## Build
