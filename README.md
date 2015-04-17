@@ -4,13 +4,34 @@ Bundles the following packages together.
 
 * [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
 * [CodeIgniter Rest Server](https://github.com/chriskacerguis/codeigniter-restserver)
-* [Twiiter Bootstrap](https://github.com/twbs/bootstrap)
+* [Twitter Bootstrap](https://github.com/twbs/bootstrap)
 * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+* [lodash](https://github.com/lodash/lodash)
 
 ## Use
 
-* Download this [package](https://github.com/sjlu/CodeIgniter-Bootstrap/archive/master.zip).
-* Use like any other [CodeIgniter install](http://codeigniter.com/user_guide/installation/index.html). 
+* Download this [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/master/CodeIgniter-Bootstrap.zip)
+* Use like any other [CodeIgniter install](http://codeigniter.com/user_guide/installation/index.html)
+
+## Build
+
+You can alternatively build your own bundle of CodeIgniter Bootstrap.
+
+* First clone this reposistory
+```
+git clone git@github.com:sjlu/CodeIgniter-Bootstrap.git
+cd CodeIgniter-Bootstrap
+```
+
+* Run the makefile
+```
+make
+```
+
+* Unzip the build
+```
+unzip CodeIgniter-Bootstrap.zip
+```
 
 ## Docs
 
