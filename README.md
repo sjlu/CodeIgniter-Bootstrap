@@ -1,5 +1,7 @@
 # CodeIgniter Bootstrap
 
+[![Join the chat at https://gitter.im/sjlu/CodeIgniter-Bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sjlu/CodeIgniter-Bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Bundles the following packages together.
 
 * [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
