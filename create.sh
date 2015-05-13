@@ -53,7 +53,6 @@ unzip codeigniter-restserver.zip
 pushd codeigniter-restserver-${CI_REST_VERSION}
 mv application/libraries/Format.php ${BUILD_DIR}/application/libraries
 mv application/libraries/REST_Controller.php ${BUILD_DIR}/application/libraries
-sed -i .bak "s/\'xml\'/\'json\'/" application/config/rest.php
 mv application/config/rest.php ${BUILD_DIR}/application/config
 popd
 
