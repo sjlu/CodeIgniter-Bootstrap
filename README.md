@@ -14,7 +14,7 @@ Bundles the following packages together.
 
 If you're planning on just using/developing with CodeIgniter Bootstrap, don't clone the repository. Instead, use these steps to get a pre-compiled version of it.
 
-* Download the latest [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/1.0.1/CodeIgniter-Bootstrap.zip)
+* Download the latest [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/1.0.2/CodeIgniter-Bootstrap.zip)
     * Or alternatively download another [release](https://github.com/sjlu/CodeIgniter-Bootstrap/releases)
 * Use like any other [CodeIgniter install](http://codeigniter.com/user_guide/installation/index.html)
 
