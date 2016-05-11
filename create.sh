@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-CI_VERSION=3.0.0
-LODASH_VERSION=3.10.1
-BOOTSTRAP_VERSION=3.3.5
-FA_VERSION=4.4.0
+CI_VERSION=3.0.6
+LODASH_VERSION=4.11.0
+BOOTSTRAP_VERSION=3.3.6
+FA_VERSION=4.6.2
 CI_REST_VERSION=2.7.2
 
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
@@ -26,7 +26,7 @@ mkdir ${BUILD_DIR}/assets/css
 mkdir ${BUILD_DIR}/assets/fonts
 
 # LODASH
-wget https://raw.githubusercontent.com/lodash/lodash/${LODASH_VERSION}/lodash.min.js
+wget https://raw.githubusercontent.com/lodash/lodash/${LODASH_VERSION}/dist/lodash.min.js
 mv lodash.min.js ${BUILD_DIR}/assets/js
 
 # BOOTSTRAP
