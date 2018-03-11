@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-CI_VERSION=3.1.4
-LODASH_VERSION=4.11.0
+CI_VERSION=3.1.7
+LODASH_VERSION=4.17.5
 BOOTSTRAP_VERSION=3.3.7
 FA_VERSION=4.7.0
-CI_REST_VERSION=3.0.0
+CI_REST_VERSION=3.0.3
 
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 BUILD_DIR=${DIR}/CodeIgniter-Bootstrap
@@ -40,7 +40,7 @@ mv js/bootstrap.min.js ${BUILD_DIR}/assets/js
 popd
 
 # FONT AWESOME
-wget http://fontawesome.io/assets/font-awesome-${FA_VERSION}.zip -O font-awesome.zip
+wget https://fontawesome.com/v${FA_VERSION}/assets/font-awesome-${FA_VERSION}.zip -O font-awesome.zip
 unzip font-awesome.zip
 pushd font-awesome-${FA_VERSION}
 mv css/* ${BUILD_DIR}/assets/css
