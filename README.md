@@ -6,7 +6,7 @@ Bundles the following packages together.
 
 * [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
 * [CodeIgniter Rest Server](https://github.com/chriskacerguis/codeigniter-restserver)
-* [Twitter Bootstrap](https://github.com/twbs/bootstrap)
+* [Bootstrap](https://github.com/twbs/bootstrap)
 * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 * [lodash](https://github.com/lodash/lodash)
 
@@ -14,7 +14,7 @@ Bundles the following packages together.
 
 If you're planning on just using/developing with CodeIgniter Bootstrap, don't clone the repository. Instead, use these steps to get a pre-compiled version of it.
 
-* Download the latest [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/1.0.3/CodeIgniter-Bootstrap.zip)
+* Download the latest [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/1.0.4/CodeIgniter-Bootstrap.zip)
     * Or alternatively download another [release](https://github.com/sjlu/CodeIgniter-Bootstrap/releases)
 * Use like any other [CodeIgniter install](http://codeigniter.com/user_guide/installation/index.html)
 
@@ -24,7 +24,7 @@ If you plan on extending the build process, you should follow these steps. This 
 
 * First clone this reposistory
 ```
-git clone git@github.com:sjlu/CodeIgniter-Bootstrap.git
+git clone https://github.com/sjlu/CodeIgniter-Bootstrap.git
 cd CodeIgniter-Bootstrap
 ```
 
